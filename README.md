@@ -1,4 +1,4 @@
-# VintedScraper
+# vinted-api
 
 A small Python client for Vinted's hidden (undocumented) web API, built on
 [curl-cffi](https://github.com/lexiforest/curl_cffi) so requests look like a real browser.
@@ -22,13 +22,13 @@ Requires Python 3.11+.
 To use it in your project ([uv](https://docs.astral.sh/uv/)):
 
 ```bash
-uv add git+https://github.com/AntoinePaix/VintedScraper
+uv add git+https://github.com/AntoinePaix/vinted-api
 ```
 
 To work on it:
 
 ```bash
-git clone https://github.com/AntoinePaix/VintedScraper && cd VintedScraper
+git clone https://github.com/AntoinePaix/vinted-api && cd vinted-api
 uv sync
 ```
 
@@ -37,13 +37,13 @@ uv sync
 To use it in your project, with pip:
 
 ```bash
-pip install git+https://github.com/AntoinePaix/VintedScraper
+pip install git+https://github.com/AntoinePaix/vinted-api
 ```
 
 To work on it:
 
 ```bash
-git clone https://github.com/AntoinePaix/VintedScraper && cd VintedScraper
+git clone https://github.com/AntoinePaix/vinted-api && cd vinted-api
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -e . --group dev  # --group needs pip 25.1+

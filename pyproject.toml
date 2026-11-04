@@ -10,8 +10,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/AntoinePaix/VintedScraper"
-Issues = "https://github.com/AntoinePaix/VintedScraper/issues"
+Homepage = "https://github.com/AntoinePaix/vinted-api"
+Issues = "https://github.com/AntoinePaix/vinted-api/issues"
 
 [dependency-groups]
 dev = [

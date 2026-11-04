@@ -15,14 +15,42 @@ No account is needed, only public data is accessed. Be gentle: Vinted rate limit
 
 ## Installation
 
-Requires [uv](https://docs.astral.sh/uv/).
+Requires Python 3.11+.
+
+### With uv
+
+To use it in your project ([uv](https://docs.astral.sh/uv/)):
 
 ```bash
-git clone <this repo> && cd VintedScraper
+uv add git+https://github.com/AntoinePaix/VintedScraper
+```
+
+To work on it:
+
+```bash
+git clone https://github.com/AntoinePaix/VintedScraper && cd VintedScraper
 uv sync
 ```
 
-To use it from another uv project: `uv add /path/to/VintedScraper` (or `uv add git+<repo url>`).
+### Without uv
+
+To use it in your project, with pip:
+
+```bash
+pip install git+https://github.com/AntoinePaix/VintedScraper
+```
+
+To work on it:
+
+```bash
+git clone https://github.com/AntoinePaix/VintedScraper && cd VintedScraper
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -e . --group dev  # --group needs pip 25.1+
+```
+
+Then run the commands of the [Development](#development) section without the `uv run` prefix
+(e.g. `pytest`, `ruff check --fix .`).
 
 ## Quick start
 

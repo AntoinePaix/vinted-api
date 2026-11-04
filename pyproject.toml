@@ -9,6 +9,10 @@ dependencies = [
     "curl-cffi>=0.13",
 ]
 
+[project.urls]
+Homepage = "https://github.com/AntoinePaix/VintedScraper"
+Issues = "https://github.com/AntoinePaix/VintedScraper/issues"
+
 [dependency-groups]
 dev = [
     "pytest>=8",

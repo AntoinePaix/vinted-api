@@ -1,4 +1,3 @@
-# Files
-vinted.log
-vinted.csv
-geckodriver.log
+# Python / uv
+.venv/
+__pycache__/

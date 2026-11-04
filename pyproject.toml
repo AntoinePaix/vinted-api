@@ -1,0 +1,33 @@
+[project]
+name = "vinted"
+version = "0.3.0"
+description = "Python client for Vinted's hidden web API, built on curl-cffi."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = [
+    "curl-cffi>=0.13",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.17.3",
+]
+
+[build-system]
+requires = ["uv_build>=0.9,<0.13"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+markers = ["live: hits the real Vinted website (run with `-m live`)"]
+addopts = "-m 'not live'"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+extend-select = ["I", "COM812"]
+
+[tool.ruff.lint.isort]
+force-single-line = true
